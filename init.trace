@@ -1,0 +1,141 @@
+COMMENTS FROM DATA FILES:
+
+! NORDIC TEST SYSTEM - OPERATING POINT B                                                                                          
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+EXTRACTED RECORDS:
+
+   77 buses extracted from records
+  105 branches extracted from records
+   23 synchronous machines extracted from records
+       for a total of    474 continuous time states
+                         138 discrete exciter states
+                         552 exciter parameters
+                          24 discrete torque states
+                         119 torque parameters
+    0 user-defined two-ports extracted from records
+   23 user-defined injectors extracted from records
+       for a total of     90 continuous time states
+                          45 discrete states
+                         506 parameters
+    0 impedance loads extracted from records or created from mismatches
+   24 discrete controllers extracted from records
+
+NUMBER OF ISLANDS :    1
+
+    77 buses in island #     1
+
+NUMBER OF SHUNTS :    12  (B_ type:     0)
+
+shunt                 at bus                 Qnom island breaker
+
+SH1022                1022                    50.000      1    1
+SH1041                1041                   250.000      1    1
+SH1042                1042                     0.000      1    1
+SH1043                1043                   200.000      1    1
+SH1044                1044                   200.000      1    1
+SH1045                1045                   200.000      1    1
+SH4012                4012                  -100.000      1    1
+SH4041                4041                   200.000      1    1
+SH4043                4043                   200.000      1    1
+SH4046                4046                   100.000      1    1
+SH4051                4051                   100.000      1    1
+SH4071                4071                  -400.000      1    1
+
+NUMBER OF SYNCHRONOUS MACHINES :   23
+
+machine              at bus                 V            P           Q        delta    sat    island  br
+                     excit model          vf(pu)   torque model               Tm(pu)
+
+g1                   g1                   1.0684    599.99980    -19.60272    41.94   1.1505       1   1
+                     GENERIC1             1.4143   HYDRO_GENERIC1            0.78947
+g2                   g2                   1.0565    300.00031    -19.29563    38.09   1.1375       1   1
+                     GENERIC1             1.2691   HYDRO_GENERIC1            0.52632
+g3                   g3                   1.0595    549.99991     -8.51345    50.98   1.1450       1   1
+                     GENERIC1             1.4346   HYDRO_GENERIC1            0.82707
+g4                   g4                   1.0339    400.00026    -15.45438    51.61   1.1228       1   1
+                     GENERIC1             1.3209   HYDRO_GENERIC1            0.70175
+g5                   g5                   1.0294    200.00003    -26.27773    37.29   1.1132       1   1
+                     GENERIC1             1.3158   HYDRO_GENERIC1            0.84211
+g6                   g6                   1.0084    359.99993    133.47425    23.25   1.1474       1   1
+                     GENERIC1             2.7400   CONSTANT                  1.00000
+g7                   g7                   1.0141    179.99988     51.42887    16.10   1.1425       1   1
+                     GENERIC1             2.6162   CONSTANT                  1.00000
+g8                   g8                   1.0498    750.00017    129.81184    36.42   1.1581       1   1
+                     GENERIC1             1.6479   HYDRO_GENERIC1            0.92879
+g9                   g9                   0.9988    668.50039     37.90235    38.34   1.1059       1   1
+                     GENERIC1             1.3473   HYDRO_GENERIC1            0.70368
+g10                  g10                  1.0157    600.00025    153.80920    40.07   1.1341       1   1
+                     GENERIC1             1.5764   HYDRO_GENERIC1            0.78947
+g11                  g11                  1.0211    249.99994    -73.83278    30.27   1.0956       1   1
+                     GENERIC1             1.2008   HYDRO_GENERIC1            0.87719
+g12                  g12                  1.0200    309.99996    -55.59958    28.69   1.1031       1   1
+                     GENERIC1             1.3174   HYDRO_GENERIC1            0.93233
+g13                  g13                  1.0170      0.00000   -118.32069   -20.62   1.0776       1   1
+                     GENERIC1             0.4903   CONSTANT                  0.00000
+g14                  g14                  1.0454    629.99990     38.05455    38.01   1.1429       1   1
+                     GENERIC1             2.3164   CONSTANT                  1.00000
+g15                  g15                  1.0455    540.00018     74.11509    34.28   1.1512       1   1
+                     GENERIC1             2.4088   CONSTANT                  1.00000
+g15b                 g15b                 1.0455    540.00018     74.11509    34.28   1.1512       1   1
+                     GENERIC1             2.4088   CONSTANT                  1.00000
+g16                  g16                  1.0531    599.99977     59.86825    31.56   1.1523       1   1
+                     GENERIC1             2.2821   CONSTANT                  0.95238
+g16b                 g16b                 1.0531    599.99977     59.86825    31.56   1.1523       1   1
+                     GENERIC1             2.2821   CONSTANT                  0.95238
+g17                  g17                  1.0092    530.00053    -22.53717    48.79   1.1076       1   1
+                     GENERIC1             2.1966   CONSTANT                  0.98148
+g18                  g18                  1.0307    529.99987    110.53572    41.24   1.1464       1   1
+                     GENERIC1             2.4721   CONSTANT                  0.98148
+g18b                 g18b                 1.0307    529.99987    110.53572    41.24   1.1464       1   1
+                     GENERIC1             2.4721   CONSTANT                  0.98148
+g19                  g19                  1.0300    299.99989    117.46456    24.75   1.1485       1   1
+                     GENERIC1             1.5684   HYDRO_GENERIC1            0.63158
+g20                  g20                  1.0185   1374.88443    376.75593    10.17   1.1208       1   1
+                     GENERIC1             1.2733   HYDRO_GENERIC1            0.32161
+
+NUMBER OF INJECTORS :       23
+
+model name         injector name        at bus                  V            P            Q
+
+LOAD                 L_11                 11                  1.0059   -199.99976    -68.80214
+LOAD                 L_12                 12                  1.0009   -299.99931    -83.80047
+LOAD                 L_13                 13                  1.0042   -100.00000    -34.40083
+LOAD                 L_22                 22                  1.0066   -280.00003    -79.90096
+LOAD                 L_01                 1                   0.9941   -599.99834   -148.19710
+LOAD                 L_02                 2                   0.9930   -329.99989    -70.99906
+LOAD                 L_03                 3                   0.9942   -259.99970    -83.79911
+LOAD                 L_04                 4                   0.9979   -839.99958   -252.00487
+LOAD                 L_05                 5                   0.9981   -720.01273   -190.46693
+LOAD                 L_31                 31                  1.0013   -100.00003    -24.70048
+LOAD                 L_32                 32                  1.0053   -200.00006    -39.60147
+LOAD                 L_41                 41                  1.0037   -540.00106   -131.40044
+LOAD                 L_42                 42                  0.9994   -400.00067   -127.40112
+LOAD                 L_43                 43                  1.0006   -900.00008   -254.60589
+LOAD                 L_46                 46                  1.0010   -700.00135   -211.80120
+LOAD                 L_47                 47                  1.0029    -99.99990    -44.00104
+LOAD                 L_51                 51                  1.0016   -799.99991   -258.19276
+LOAD                 L_61                 61                  1.0065   -499.99990   -122.49816
+LOAD                 L_62                 62                  1.0082   -299.99979    -83.80070
+LOAD                 L_63                 63                  1.0083   -590.00069   -264.60580
+LOAD                 L_71                 71                  1.0039   -300.00011    -83.79938
+LOAD                 L_72                 72                  0.9960  -2000.00025   -396.09874
+VFAULT               VFAULT               g1                  1.0684      0.00000      0.00000
+
+NUMBER OF TWO-PORTS :        0
+
+
+NUMBER OF IMPEDANCE LOADS :     0  (M_ type:     0 )
+
